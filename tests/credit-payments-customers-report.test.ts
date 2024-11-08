@@ -2,12 +2,14 @@ import { BrowserContext, expect, test } from "@playwright/test";
 import { HomePage } from "../pages/home.page";
 import { CardPayment } from "../pages/card-payment.page";
 import { getTotalRevenuefromCsv } from "../utils/csv.util";
+
 test.describe("Customer Payment report for credit card", () => {
     let homePage: HomePage;
     let cardPaymentPage: CardPayment;
     const date = "2023/11/23 00:00:00";
     const expectedSumOfRevenue = 13915.15;
     let context: BrowserContext;
+
     test.beforeEach(async ({ browser }) => {
         context = await browser.newContext();
         const page = await context.newPage();

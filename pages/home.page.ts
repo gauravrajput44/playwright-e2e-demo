@@ -15,7 +15,6 @@ export class HomePage extends BasePage {
 
     async openContentBrowserMenu() {
         await this.openContentBrowser.click();
-
     }
 
     async navigateToAskQFinancialServices() {
