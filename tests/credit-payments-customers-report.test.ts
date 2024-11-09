@@ -27,6 +27,7 @@ test.describe("Customer Payment report for credit card", () => {
     });
 
     test("Verify that Master credit card customer data can be exported and that the sum of relevant values matches expected results.", async () => {
+        // date is hard coded as per requirement
         await cardPaymentPage.selectDate(date);
         await cardPaymentPage.filterByMasterCreditCardType();
         const revenue = await (getTotalRevenuefromCsv(await cardPaymentPage.getDownloadedCsv()));

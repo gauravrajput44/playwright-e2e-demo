@@ -1,4 +1,5 @@
 
+// Calculates the total revenue from a CSV file string
 export async function getTotalRevenuefromCsv(csvFile: string): Promise<number> {
     return csvFile
         .split("\n")

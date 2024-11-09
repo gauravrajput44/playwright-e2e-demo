@@ -11,9 +11,9 @@ This repository contains the end-to-end (E2E) test solution for the Emil Group c
 - **Node.js Version:** v23.1.0
 - **Yarn Version:** v1.22.19
 
-## Test Execution Methods
+## How to Run Test
 
-### 1. Command Line Execution
+### 1. Run on local terminal
 
 #### Prerequisites
 - Node.js version > 18.0.0 (recommended: v23.1.0)
@@ -36,17 +36,17 @@ This repository contains the end-to-end (E2E) test solution for the Emil Group c
 
 3. Run tests: By default tests are executed on 3 browsers(chromium, firefox and webkit) and in headless mode
    ```bash
-   yarn playwright test
+   yarn test
    ```
 
 4. Run test on specific browser:
    ```bash
-   yarn playwright test --project firefox //Test would be executed in firefox
-   yarn playwright test --project webkit //Test would be executed in webkit 
+   yarn test --project firefox //Test would be executed in firefox
+   yarn test --project webkit //Test would be executed in webkit
    ```   
 5. Run test in headed browser mode
    ```bash
-   yarn playwright test --headed
+   yarn test --headed
    ```
 
 6. Open report:
@@ -54,7 +54,7 @@ This repository contains the end-to-end (E2E) test solution for the Emil Group c
    yarn open-report
    ```
 
-### 2. Docker Execution
+### 2. Docker Execution [Recommened]
 
 #### Steps to Execute
 1. Build the Docker image:
@@ -83,4 +83,3 @@ This repository contains the end-to-end (E2E) test solution for the Emil Group c
 - Capture failed HTTP request/response in failure scenario
 - Capture browser console log
 - Integrate other reporting tool for e.g. Allure Playwright
-- Based on CI/CD, Github actions can easily be added
