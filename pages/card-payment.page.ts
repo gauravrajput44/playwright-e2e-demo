@@ -49,7 +49,7 @@ export class CardPayment extends BasePage {
         await this.page.keyboard.press('Escape');  // Close the dropdown menu
     }
 
-    async getDownloadedCsv(filename = 'card_payment_report.csv'): Promise<string> {
+    async getDownloadedCsv(): Promise<string> {
         await this.customerListTable.click();
         await this.contextMenuButton.click();
 
@@ -57,7 +57,7 @@ export class CardPayment extends BasePage {
         await this.exportCsvButton.click();
 
         const download = await downloadPromise;
-        const filePath = `${this.downloadPath}${filename}`;
+        const filePath = `${this.downloadPath}${download.suggestedFilename()}`;
         await download.saveAs(filePath);
         return fs.readFileSync(filePath, "utf-8");
     }
