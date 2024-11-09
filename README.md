@@ -34,12 +34,22 @@ This repository contains the end-to-end (E2E) test solution for the Emil Group c
    yarn install
    ```
 
-3. Run tests:
+3. Run tests: By default tests are executed on 3 browsers(chromium, firefox and webkit) and in headless mode
    ```bash
    yarn playwright test
    ```
 
-4. Generate and view report:
+4. Run test on specific browser:
+   ```bash
+   yarn playwright test --project firefox //Test would be executed in firefox
+   yarn playwright test --project webkit //Test would be executed in webkit 
+   ```   
+5. Run test in headed browser mode
+   ```bash
+   yarn playwright test --headed
+   ```
+
+6. Open report:
    ```bash
    yarn open-report
    ```
@@ -66,3 +76,11 @@ This repository contains the end-to-end (E2E) test solution for the Emil Group c
 - The framework is configured to run E2E tests using Playwright
 - Test reports are generated automatically after test execution
 - Reports can be accessed locally when using either execution method
+- Failed screenshots are captured if test is failed
+
+## Future Enhancement:
+- Add recorded video execution for failed test scenario
+- Capture failed HTTP request/response in failure scenario
+- Capture browser console log
+- Integrate other reporting tool for e.g. Allure Playwright
+- Based on CI/CD, Github actions can easily be added
