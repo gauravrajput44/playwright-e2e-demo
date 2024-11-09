@@ -54,7 +54,7 @@ This repository contains the end-to-end (E2E) test solution for the Emil Group c
    yarn open-report
    ```
 
-### 2. Docker Execution [Recommened]
+### 2. Docker Execution
 
 #### Steps to Execute
 1. Build the Docker image:
@@ -71,6 +71,11 @@ This repository contains the end-to-end (E2E) test solution for the Emil Group c
    ```bash
    yarn open-report
    ```
+
+### 3. Github action 
+Go to github [action](https://github.com/gauravrajput44/emil-e2e-automation/actions/workflows/playwright.yml) and use the run workflow to execute the tests in the CI
+
+![alt text](image.png)
 
 ## Additional Information
 - The framework is configured to run E2E tests using Playwright
