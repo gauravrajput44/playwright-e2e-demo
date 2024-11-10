@@ -1,15 +1,24 @@
 {
-    "name": "emil-e2e-automation",
-    "version": "1.0.0",
-    "description": "Emil E2E tests solution and API collection",
-    "scripts": {
-        "test": "playwright test",
-        "open-report": "playwright show-report"
-    },
-    "dependencies": {
+  "name": "emil-e2e-automation",
+  "version": "1.0.0",
+  "description": "Emil E2E tests solution and API collection",
+  "scripts": {
+    "test": "playwright test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "open-report": "playwright show-report"
+  },
+  "dependencies": {
     "@playwright/test": "1.48.2",
     "@types/node": "22.9.0",
-    "typescript": "5.6.3",
-    "csv-parse": "5.5.6"
-    }
+    "@typescript-eslint/eslint-plugin": "8.13.0",
+    "@typescript-eslint/parser": "8.13.0",
+    "csv-parse": "5.5.6",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "prettier": "2.7.1",
+    "typescript": "5.6.3"
+  }
 }
