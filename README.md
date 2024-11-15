@@ -1,4 +1,4 @@
-# Emil Group Coding Challenge: Task 2 UI Testing
+# Democentral Playwright PoC
 
 ## Overview
 
