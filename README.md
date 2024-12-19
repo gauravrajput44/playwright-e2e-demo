@@ -2,11 +2,9 @@
 
 ## Overview
 
-This repository contains the end-to-end (E2E) test solution for the Emil Group coding challenge. The framework has been developed and tested with specific system requirements to ensure optimal performance.
+This repository contains the end-to-end (E2E) tests using playwright. The framework has been developed and tested with specific system requirements to ensure optimal performance.
 
 ## Development Environment
-
-### System Requirements
 
 - **Operating System:** Mac OS Sonoma Version 14.6.1 (Apple M1 Pro)
 - **IDE:** Visual Studio Code
